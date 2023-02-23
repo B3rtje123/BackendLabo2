@@ -1,0 +1,25 @@
+@host = http://localhost:5000
+
+GET {{host}}/locations HTTP/1.1
+###
+
+GET {{host}}/registrations HTTP/1.1
+###
+
+POST {{host}}/registrations HTTP/1.1
+Content-Type: application/json
+
+{
+    "VaccinatinRegistrationId": "2cbcc4d5-ce0a-4438-b751-b559b916bb72",
+    "Name": "Jhon",
+    "firstName": "Babbel",
+    "EMail": "Oegaboega@gmail.com",
+    "YearOfBirth": 1980,
+    "VaccinationDate": "2021-05-01",
+    "VaccinTypeId": "2774e3d1-2b0f-47ab-b391-8ea43e6f9d80",
+    "VaccinationLocationId": "2774e3d1-2b0f-47ab-b391-8ea43e6f9d80"
+}
+###
+
+GET {{host}}/vaccins HTTP/1.1
+###
